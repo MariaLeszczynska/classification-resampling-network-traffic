@@ -1,1 +1,30 @@
-# classification-resampling-network-traffic
+# Network traffic classification with resampling and evaluation
+
+This project focuses on detecting and classifying malicious and benign network traffic using supervised machine learning models. It was originally prepared for a university machine learning task involving a heavily imbalanced dataset. Based on domain challenges such as class skew and missing values, the project implements several preprocessing, resampling, and evaluation techniques to ensure model fairness and performance.
+
+## Objective – accurately classify network traffic into one of six categories (clear, donbot, fast_flux, neris, qvod, rbot), while handling missing data and severe class imbalance.
+
+## Features:
+- End-to-end ML pipeline including:
+  - Cleaning, preprocessing, and transformation
+  - Dimensionality reduction via PCA
+  - Outlier detection (IQR based)
+  - Class imbalance handled with SMOTE
+- Models evaluated:
+  - Logistic Regression
+  - Random Forest
+  - Support Vector Classifier (SVC)
+  - K-Nearest Neighbors (KNN)
+  - Gaussian Naive Bayes
+- Stratified 5-fold validation and performance aggregation
+- Visualizations for:
+  - Class distribution before and after resampling
+  - Missing value analysis
+  - Feature correlations
+
+## Notes:
+While the dataset was originally imbalanced and noisy:
+- Features with >75% missing values were dropped after analysis
+- Binary feature encoding and PCA were applied for normalization and dimensionality reduction
+- SMOTE was used to oversample minority classes, resulting in a balanced training set
+- A custom evaluation class aggregates performance metrics and confusion matrices across folds
