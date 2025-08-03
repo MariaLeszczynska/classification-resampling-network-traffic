@@ -1,6 +1,6 @@
 # Network traffic classification with resampling and evaluation
 
-This project focuses on detecting and classifying malicious and benign network traffic using supervised machine learning models. It was originally prepared for a university machine learning task involving a heavily imbalanced dataset. Based on domain challenges such as class skew and missing values, the project implements several preprocessing, resampling, and evaluation techniques to ensure model fairness and performance.
+This project focuses on detecting and classifying malicious and benign network traffic using supervised machine learning models. It was originally prepared for a university machine learning task involving a heavily imbalanced dataset.
 
 ## Objective – accurately classify network traffic into one of six categories (clear, donbot, fast_flux, neris, qvod, rbot), while handling missing data and severe class imbalance.
 
